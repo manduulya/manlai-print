@@ -1,13 +1,15 @@
 .nav-section {
-    padding-top: 3rem;
+    width: 100%;
+    padding-top: 4rem;
     color: rgba(255,255,255,.9)
 }
 .nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .nav-li {
     list-style-type: none;
     display: inline;
-    margin-right: 3rem;
+    margin-left: 3rem;
 }
