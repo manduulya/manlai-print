@@ -9,7 +9,18 @@
     justify-content: space-between;
 }
 .nav-li {
+    box-sizing: border-box;
     list-style-type: none;
     display: inline;
-    margin-left: 3rem;
+    margin-left: 1rem;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    border: 3px solid transparent;
+    -webkit-transition:  500ms ease ;
+    -moz-transition:  500ms ease ;
+    -o-transition:  500ms ease ;
+    transition:  500ms ease ;
+}
+.nav-li:hover{
+    border-bottom: 3px solid rgba(255,255,255,.7);
 }
