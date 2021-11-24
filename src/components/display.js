@@ -20,7 +20,19 @@ export default class Display extends React.Component {
                 disp5
             ]
         }
+        console.log(this.state.imgs.length)
     }
+
+    // switchImgs = () => {
+    //     if (this.state.currentImg === this.state.imgs.length - 1) {
+    //         setInterval(this.setState({ currentImg: this.state.currentImg + 1 }), 5000)
+    //     } else {
+    //         this.setState({ currentImg: this.state.currentImg + 1 })
+    //         console.log(this.state.currentImg + 1)
+    //     }
+    //     console.log(this.state.currentImg)
+    //     console.log(this.state.imgs.length - 1)
+    // }
     switchImage = () => {
         if (this.state.currentImg < this.state.imgs.length - 1) {
             this.setState({ currentImg: this.state.currentImg + 1 })
@@ -33,13 +45,13 @@ export default class Display extends React.Component {
     }
 
     componentDidMount() {
-        setInterval(this.switchImage, 5000)
+        setInterval(this.switchImage, 2000)
     }
     render() {
         return (
             <section className='display-section'>
                 {/* <img src={disp1} className='display-box' alt='display' /> */}
-                <img src={this.state.imgs[this.state.currentImg]} className='display-box' alt='display-imgs'></img>
+                <img src={this.state.imgs[this.state.currentImg]} className='display-box' alt='display-imgs' ></img>
             </section>
         )
     }

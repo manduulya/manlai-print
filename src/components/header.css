@@ -1,7 +1,8 @@
 .nav-section {
     width: 100%;
     padding-top: 4rem;
-    color: rgba(255,255,255,.9)
+    color: rgba(255,255,255,.75);
+    font-size: 1.2rem;
 }
 .nav {
     display: flex;

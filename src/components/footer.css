@@ -1,6 +1,20 @@
 .footer-section {
+    width: 100%;
+}
+.footer-wrap {
     width: 100vw;
-    padding-bottom: 2rem;
+    position: relative;
+    left: calc(-50vw + 50%);
+    padding: 1rem 0;
     color: rgba(255,255,255,.65);
     background-color: rgba(16, 22, 40);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-link {
+    width: 2.5rem;
+    opacity: .6;
+    margin-left: 1rem;
 }
