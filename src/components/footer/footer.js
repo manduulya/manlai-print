@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css'
-import fb from '../assets/FB.png'
-import insta from '../assets/Insta.png'
+import fb from '../../assets/FB.png'
+import insta from '../../assets/Insta.png'
 
 function Footer() {
     return (
@@ -13,8 +13,11 @@ function Footer() {
                     <p>+976-99174649</p>
                 </div>
                 <div className='social-links'>
-                    <img src={fb} className='social-link' alt='social-logo'></img>
-                    <img src={insta} className='social-link' alt='social-logo'></img>
+                    <a href='https://www.facebook.com/manlai.print.studio'><img src={fb} className='social-link' alt='social-logo'></img>
+                    </a>
+                    <a href='https://www.instagram.com/m_photo_studio/'>
+                        <img src={insta} className='social-link' alt='social-logo'></img>
+                    </a>
                 </div>
             </div>
         </section>

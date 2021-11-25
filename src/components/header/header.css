@@ -2,19 +2,22 @@
     width: 100%;
     padding-top: 4rem;
     color: rgba(255,255,255,.75);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .nav-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.nav-logo {
+    width: 10rem;
+}
 .nav-li {
     box-sizing: border-box;
     list-style-type: none;
     display: inline;
     margin-left: 1rem;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem;
     cursor: pointer;
     border: 3px solid transparent;
     -webkit-transition:  500ms ease ;
