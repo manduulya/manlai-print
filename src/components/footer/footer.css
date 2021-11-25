@@ -5,7 +5,7 @@
     width: 100vw;
     position: relative;
     left: calc(-50vw + 50%);
-    padding: 1rem 0;
+    padding: 0.7rem 0;
     color: rgba(255,255,255,.65);
     background-color: rgba(16, 22, 40);
     display: flex;
@@ -18,3 +18,6 @@
     opacity: .6;
     margin-left: 1rem;
 }
+.address { 
+    font-size: 0.8rem;
+} 

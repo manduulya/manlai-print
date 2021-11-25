@@ -1,11 +1,12 @@
 import React from 'react';
 import './header.css'
+import logo from '../../assets/mps-logo.png'
 
 function Header() {
     return (
         <section className='nav-section'>
             <nav className='nav-wrapper'>
-                <img src='' alt='mps-logo' className='nav-logo' />
+                <img src={logo} alt='mps-logo' className='nav-logo' />
                 <ul className='nav-ul'>
                     <li className='nav-li'>About</li>
                     <li className='nav-li'>Services</li>
