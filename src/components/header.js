@@ -4,7 +4,7 @@ import './header.css'
 function Header() {
     return (
         <section className='nav-section'>
-            <nav className='nav'>
+            <nav className='nav-wrapper'>
                 <img src='' alt='mps-logo' className='nav-logo' />
                 <ul className='nav-ul'>
                     <li className='nav-li'>About</li>

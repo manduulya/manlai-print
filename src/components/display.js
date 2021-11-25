@@ -1,5 +1,7 @@
 import React from 'react';
 import './display.css';
+import { Fade } from 'react-slideshow-image'
+import 'react-slideshow-image/dist/styles.css'
 import disp1 from '../assets/01.jpg';
 import disp2 from '../assets/02.jpg';
 import disp3 from '../assets/03.jpg';
@@ -20,38 +22,39 @@ export default class Display extends React.Component {
                 disp5
             ]
         }
-        console.log(this.state.imgs.length)
     }
 
-    // switchImgs = () => {
-    //     if (this.state.currentImg === this.state.imgs.length - 1) {
-    //         setInterval(this.setState({ currentImg: this.state.currentImg + 1 }), 5000)
-    //     } else {
+
+    // switchImage = () => {
+    //     if (this.state.currentImg < this.state.imgs.length - 1) {
     //         this.setState({ currentImg: this.state.currentImg + 1 })
-    //         console.log(this.state.currentImg + 1)
+    //     } else {
+    //         this.setState({
+    //             currentImg: 0
+    //         })
     //     }
-    //     console.log(this.state.currentImg)
-    //     console.log(this.state.imgs.length - 1)
+    //     return this.currentImage;
     // }
-    switchImage = () => {
-        if (this.state.currentImg < this.state.imgs.length - 1) {
-            this.setState({ currentImg: this.state.currentImg + 1 })
-        } else {
-            this.setState({
-                currentImg: 0
-            })
-        }
-        return this.currentImage;
-    }
 
-    componentDidMount() {
-        setInterval(this.switchImage, 2000)
-    }
+    // componentDidMount() {
+    //     setInterval(this.switchImage, 2000)
+    // }
     render() {
+        const { imgs } = this.state;
+        console.log(imgs)
         return (
             <section className='display-section'>
-                {/* <img src={disp1} className='display-box' alt='display' /> */}
-                <img src={this.state.imgs[this.state.currentImg]} className='display-box' alt='display-imgs' ></img>
+                <div className='slide-container'>
+                    <Fade>
+                        {imgs.map((img, index) => (
+                            <div className='each-fade' key={index}>
+                                <div className='image-container'>
+                                    <img src={img} className='display-box' alt='display-imgs' />
+                                </div>
+                            </div>
+                        ))}
+                    </Fade>
+                </div>
             </section>
         )
     }
