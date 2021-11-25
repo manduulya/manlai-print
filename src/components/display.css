@@ -1,5 +1,8 @@
+.display-section {
+    width: 100%;
+}
 .display-box {
     width: 90%;
     overflow: hidden;
-    transition: 2s ease;
 }
+
