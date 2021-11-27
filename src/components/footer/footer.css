@@ -1,4 +1,6 @@
 .footer-section {
+    left: 0;
+    bottom: 0;
     width: 100%;
 }
 .footer-wrap {
@@ -21,3 +23,6 @@
 .address { 
     font-size: 0.8rem;
 } 
+.social-link:hover {
+    opacity: .9;
+}

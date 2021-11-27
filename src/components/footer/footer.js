@@ -13,9 +13,9 @@ function Footer() {
                     <p>+976-99174649</p>
                 </div>
                 <div className='social-links'>
-                    <a href='https://www.facebook.com/manlai.print.studio'><img src={fb} className='social-link' alt='social-logo'></img>
+                    <a href='https://www.facebook.com/manlai.print.studio'><img src={fb} className='social-link' alt='social-logo' target='_blank' rel="noopener noreferrer"></img>
                     </a>
-                    <a href='https://www.instagram.com/m_photo_studio/'>
+                    <a href='https://www.instagram.com/m_photo_studio/' target='_blank' rel="noopener noreferrer">
                         <img src={insta} className='social-link' alt='social-logo'></img>
                     </a>
                 </div>
