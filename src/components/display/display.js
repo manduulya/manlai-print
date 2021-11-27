@@ -24,24 +24,8 @@ export default class Display extends React.Component {
         }
     }
 
-
-    // switchImage = () => {
-    //     if (this.state.currentImg < this.state.imgs.length - 1) {
-    //         this.setState({ currentImg: this.state.currentImg + 1 })
-    //     } else {
-    //         this.setState({
-    //             currentImg: 0
-    //         })
-    //     }
-    //     return this.currentImage;
-    // }
-
-    // componentDidMount() {
-    //     setInterval(this.switchImage, 2000)
-    // }
     render() {
         const { imgs } = this.state;
-        console.log(imgs)
         return (
             <section className='display-section'>
                 <div className='slide-container'>
