@@ -5,4 +5,10 @@
     width: 90%;
     overflow: hidden;
 }
+@media only screen and (max-width: 767px) {
+    .display-section {
+        width: 95%;
+        margin: 0 auto;
+    }
+ }
 

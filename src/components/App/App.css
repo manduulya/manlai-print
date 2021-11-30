@@ -16,7 +16,7 @@
 } 
 @media only screen and (max-width: 767px) {
     .App-wrapper {
-        width: 90%;
+        width: 100%;
         overflow: hidden;
     }
 } 

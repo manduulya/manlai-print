@@ -1,6 +1,4 @@
 .footer-section {
-    left: 0;
-    bottom: 0;
     width: 100%;
 }
 .footer-wrap {
@@ -9,11 +7,12 @@
     left: calc(-50vw + 50%);
     padding: 0.7rem 0;
     color: rgba(255,255,255,.65);
-    background-color: rgba(16, 22, 40);
+    background-color: #0f1426;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    border-radius: 1rem 1rem 0 0;
 }
 .social-link {
     width: 2.5rem;
@@ -25,4 +24,10 @@
 } 
 .social-link:hover {
     opacity: .9;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-wrap{
+        display: block;
+    }
 }
