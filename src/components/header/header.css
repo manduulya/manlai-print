@@ -38,6 +38,9 @@
     -o-transition:  500ms ease ;
     transition:  500ms ease ;
 }
+.nav-logo:hover {
+    width: 10rem;
+}
 .nav-li:hover{
     border-bottom: 3px solid rgba(255,255,255,.7);
     color: rgba(255,255,255,.95);
