@@ -1,0 +1,10 @@
+.service-section-wrapper {
+    /* border-radius: 1rem; */
+    background-color:darkslategrey;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 1rem
+}
+.service-section-wrapper:hover {
+    background-color:olive;
+}
