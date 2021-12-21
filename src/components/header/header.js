@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './header.css'
 import logo from '../../assets/mps-logo.png'
 import { Link } from 'react-router-dom';
 
 function Header() {
 
-    const [active, setActive] = useState();
+    // const [active, setActive] = useState();
 
     function activeHandler() {
         console.log('clicked')
