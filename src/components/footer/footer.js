@@ -4,13 +4,14 @@ import fb from '../../assets/FB.png'
 import insta from '../../assets/Insta.png'
 
 function Footer() {
+
     return (
         <section className='footer-section'>
             <div className='footer-wrap'>
                 <div className='address'>
                     <p>Darkhan Soum, 5th bagh, 20-4</p>
                     <p>Darkhan-Uul province, Mongolia</p>
-                    <p>+976-99174649</p>
+                    <p>+976-99157488  +976-99174649</p>
                 </div>
                 <div className='social-links'>
                     <a href='https://www.facebook.com/manlai.print.studio'><img src={fb} className='social-link' alt='social-logo' target='_blank' rel="noopener noreferrer"></img>
